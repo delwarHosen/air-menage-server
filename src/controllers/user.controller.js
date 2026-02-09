@@ -120,6 +120,7 @@ export const loginUser = async (req, res) => {
     }
 };
 
+
 // Forgot password
 export const forgotPassword = async (req, res) => {
     try {

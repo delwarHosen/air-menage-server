@@ -13,7 +13,7 @@ const server = http.createServer(app);
 
 const PORT = process.env.PORT || 5000;
 
-// CORS - সবার আগে রাখুন
+// CORS - 
 app.use(cors({
     origin: '*',
     credentials: true,
