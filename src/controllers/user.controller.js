@@ -137,7 +137,7 @@ export const forgotPassword = async (req, res) => {
         user.resetCodeExpire = Date.now() + 5 * 60 * 1000;
         await user.save();
 
-        // await sendEmail(email, code);
+        await sendEmail(email, code);
         res.json({ msg: "Verification code sent to email" });
 
     } catch (error) {
